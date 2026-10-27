@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Scroll Game — 개인정보처리방침</title>
+  <title>BBOX — 개인정보처리방침</title>
   <style>
     body { font-family: system-ui, sans-serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem; line-height: 1.6; color: #222; }
     h1 { font-size: 1.5rem; }
@@ -11,22 +11,55 @@
 </head>
 <body>
   <h1>개인정보처리방침</h1>
-  <p>최종 수정일: 2026년 6월 7일</p>
-  <p>Scroll Game(이하 "앱")은 이용자의 개인정보를 중요하게 생각합니다.</p>
+  <p>최종 수정일: 2026년 10월 28일</p>
+  <p>BBOX(이하 "앱")은 이용자의 개인정보를 중요하게 생각합니다.</p>
   <h2>1. 수집하는 정보</h2>
   <ul>
     <li>Google 로그인 시: 이메일, 이름, 프로필 사진</li>
-    <li>Apple 로그인 시(iOS): 이메일, 이름(제공되는 경우)</li>
+    <li>Apple 로그인 시(iOS): 이메일, 이름(최초 로그인 시 제공되는 경우)</li>
     <li>서비스 이용 시: 업로드한 HTML 게임, 게임 이름·설명, 좋아요 기록</li>
+    <li>기술 정보: 앱 오류 로그(기기·운영체제 정보가 최소한으로 수집될 수 있음)</li>
+    <li>Firebase Analytics(Google): 화면 조회 이벤트와 SDK가 생성하는 앱 인스턴스 식별자 및 앱·기기 정보. iOS 설정은 withoutAdIdSupport: true를 사용하여 광고 식별자(IDFA) 지원을 제외합니다. 이 분석 정보 수집은 아래 Meta 추적 권한 허용 여부를 조건으로 하지 않습니다.</li>
+    <li>선택적 Meta 앱 이벤트(iOS): Apple의 앱 추적 투명성(ATT) 권한을 허용한 후에만 Meta SDK를 불러와 초기화하고 자동 앱 이벤트를 활성화합니다. SDK는 앱 실행·설치 및 기타 자동 기록 앱 활동, 광고 식별자(IDFA), 앱·기기 정보를 수집할 수 있습니다. 앱은 Meta에 맞춤 사용자 ID나 이메일 주소를 전송하지 않습니다.</li>
   </ul>
   <h2>2. 수집 목적</h2>
-  <p>회원 인증, 게임 피드 제공, 서비스 운영 및 보안</p>
-  <h2>3. 제3자</h2>
-  <p>Google(OAuth), Apple(Sign in with Apple, iOS), Supabase(인증·DB·Storage)</p>
+  <ul>
+    <li>회원 인증 및 계정 관리</li>
+    <li>게임 피드 및 좋아요 기능 제공</li>
+    <li>서비스 안정성 유지 및 보안</li>
+    <li>Firebase Analytics: 화면 이용 현황 파악 및 앱 개선</li>
+    <li>선택적 Meta 앱 이벤트: 광고 성과 측정 및 광고를 통한 앱 설치·활동의 기여도 분석</li>
+  </ul>
+  <h2>3. 제3자 제공 및 국외 처리</h2>
+  <ul>
+    <li>Google: OAuth 로그인 및 Firebase Analytics</li>
+    <li>Apple: Sign in with Apple(iOS)</li>
+    <li>Supabase: 인증·데이터베이스·파일 저장(Storage)</li>
+    <li>Meta: 이 방침에 설명된 iOS ATT 권한에 따른 선택적 앱 이벤트 및 광고 측정</li>
+  </ul>
+  <p>각 제공업체는 수신한 정보를 자체 처리 목적과 보관 관행을 포함한 해당 약관 및 개인정보처리방침에 따라 처리합니다. 특히 Google과 Meta는 앱에 보고서를 제공하는 것 외에도 각자의 방침에 명시된 목적으로 SDK 데이터를 처리할 수 있습니다. 제3자 제공업체는 미국을 비롯하여 해당 업체나 그 서비스 제공업체가 운영하는 다른 국가로 정보를 이전하거나, 그곳에서 저장·처리할 수 있습니다. 처리 국가와 방식은 제공업체 및 서비스에 따라 다릅니다.</p>
+  <ul>
+    <li><a href="https://policies.google.com/privacy">Google 개인정보처리방침</a></li>
+    <li><a href="https://firebase.google.com/support/privacy">Firebase 개인정보 보호 안내</a></li>
+    <li><a href="https://www.facebook.com/privacy/policy">Meta 개인정보처리방침</a></li>
+  </ul>
   <h2>4. 보관·삭제</h2>
-  <p>계정 삭제 시 관련 데이터를 삭제합니다. 앱 Profile → 계정 및 데이터 삭제</p>
-  <h2>5. 아동</h2>
-  <p>13세 미만 대상 아님</p>
+  <ul>
+    <li>계정 및 서비스 데이터는 계정이 활성 상태인 동안 보관합니다.</li>
+    <li>계정 삭제 시 관련 데이터(게임·좋아요·인증 정보)를 삭제합니다.</li>
+    <li>Google이나 Meta가 이미 수신한 SDK 데이터에는 위에 연결된 각 제공업체의 보관·삭제 관행이 적용됩니다. 앱 계정을 삭제하거나 ATT 권한을 철회해도 제공업체가 이미 수신한 데이터가 자동으로 삭제되지는 않습니다.</li>
+  </ul>
+  <h2>5. 이용자 권리 및 추적 설정</h2>
+  <ul>
+    <li>앱 Profile 탭 → 계정 및 데이터 삭제에서 계정과 데이터 삭제를 요청할 수 있습니다.</li>
+    <li>iOS에서 Meta 추적은 선택 사항입니다. ATT 권한을 허용하지 않으면 앱은 Meta SDK를 불러오거나 초기화하지 않으며, 앱은 계속 이용할 수 있습니다.</li>
+    <li>iOS 설정 → 개인정보 보호 및 보안 → 추적 → BBOX에서 권한을 변경할 수 있습니다. 앱은 포그라운드로 돌아올 때 ATT 권한을 다시 확인합니다. SDK 초기화 후 권한을 철회하면 이 확인 시점에 자동 앱 이벤트 기록, 광고 식별자 수집 및 광고주 추적 플래그를 비활성화합니다.</li>
+    <li>ATT 선택은 이 Meta 연동을 제어하며 Firebase Analytics를 끄지는 않습니다. 이미 수집된 데이터도 삭제하지 않습니다.</li>
+  </ul>
+  <h2>6. 아동</h2>
+  <p>13세 미만을 대상으로 하지 않습니다.</p>
+  <h2>7. 변경</h2>
+  <p>방침 변경 시 앱 내 또는 별도 공지로 안내합니다.</p>
   <p>문의: <a href="mailto:issaclee6320@gmail.com">issaclee6320@gmail.com</a></p>
 </body>
 </html>
